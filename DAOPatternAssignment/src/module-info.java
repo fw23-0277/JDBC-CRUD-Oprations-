@@ -6,4 +6,5 @@
  *
  */
 module DAOPatternAssignment {
+	requires java.sql;
 }

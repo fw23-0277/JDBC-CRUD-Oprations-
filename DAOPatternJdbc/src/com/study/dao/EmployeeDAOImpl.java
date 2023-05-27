@@ -27,9 +27,10 @@ public class EmployeeDAOImpl implements IEmployeeDAO {
 			prepareStatement.setString(2, employee.getEmpName());
 			prepareStatement.setDouble(3, employee.getAnnualSalary());
 			prepareStatement.setDate(4, Date.valueOf(employee.getJoiningDate()));
+			
 			prepareStatement.executeUpdate();
 			
-			
+		
 		} catch (SQLException e) {
 			throw new SomethingWentWrongException("Unable to add Employee...!");
 		}

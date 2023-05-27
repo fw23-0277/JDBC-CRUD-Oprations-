@@ -26,6 +26,6 @@ public class DBUtils {
 	public static boolean isResultSetEmpty(ResultSet resultSet) throws SQLException {
 	    return (!resultSet.isBeforeFirst() && resultSet.getRow() == 0);
 	}
-
-
+	
+	
 }
